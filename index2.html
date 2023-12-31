@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick's Web Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="container mx-auto p-6 bg-black text-sm">
+    <!-- Navigation Bar -->
+    <nav class="bg-black text-white font-bold py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold hover:text-blue-200 transition duration-300 ease-in-out">NWA</h1>
+            <div class="flex space-x-4">
+                <a href="#home" class="hover:text-blue-300 transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="hover:text-blue-300 transition duration-300 ease-in-out">About</a>
+                <a href="#services" class="hover:text-blue-300 transition duration-300 ease-in-out">Services</a>
+                <a href="#blog" class="hover:text-blue-300 transition duration-300 ease-in-out">Blog</a>
+                <a href="#contact" class="hover:text-blue-300 transition duration-300 ease-in-out">Contact</a>
+            </div>
+        </div>
+
+        <header class="text-white p-20 text-center">
+            <h1 class="text-4xl mb-4">I Build Stunning Websites</h1>
+            <p class="text-xl">Transforming Your Ideas Into Digital Reality</p>
+        </header>
+    </nav>
+
+    <section id="about" class="p-6 text-white bg-black">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed">We are a passionate team of web designers and developers dedicated to creating beautiful and functional websites that help businesses succeed. Our approach combines innovative design with cutting-edge technology to deliver exceptional digital experiences.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./nick.png" alt="Your Team" class="rounded-full w-48 h-48 border-4 border-white shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Services Section -->
+    <section id="services" class="p-6">
+        <h2 class="text-3xl mb-6 text-center text-white">Our Services</h2>
+        <div class="flex flex-wrap justify-center space-x-4">
+            <!-- Service 1 -->
+            <div class="flex-1 max-w-sm p-4 bg-white rounded shadow-md items-center">
+                <h3 class="text-xl mb-2">Basic Package - $500</h3>
+                <p>Perfect for small businesses or personal projects. Includes a basic website with up to 5 pages, SEO optimization, and mobile responsiveness.</p>
+                <a href="link-to-purchase-basic-package" class="flex items-center mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
+            </div>
+            <!-- Service 2 -->
+            <div class="flex-1 max-w-sm p-4 bg-white rounded shadow-md">
+                <h3 class="text-xl mb-2">Professional Package - $750</h3>
+                <p>Includes everything in the Basic package, plus e-commerce functionality, advanced SEO, and social media integration.</p>
+                <a href="link-to-purchase-professional-package" class="flex items-center mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
+            </div>
+            <!-- Service 3 -->
+            <div class="flex-1 max-w-sm p-4 bg-white rounded shadow-md">
+                <h3 class="text-xl mb-2">Premium Package - $1000</h3>
+                <p>Our comprehensive solution. Includes all features of the Professional package, plus custom graphics, premium plugins, and ongoing maintenance for 1 month.</p>
+                <a href="link-to-purchase-premium-package" class="flex items-center mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section id="blog" class="p-6">
+        <h2 class="text-3xl mb-6 text-center text-white">Latest Blog Posts</h2>
+        <div class="flex gap-6">
+            <div class="p-4 bg-gray-100 rounded shadow-md">
+                <h3 class="text-xl mb-2 text-center">XRP App</h3>
+                <div>
+                    <Image src="./xrp.jpg" alt="pic" />
+                </div>
+                <p class="mb-4">Stay updated with our latest blog posts on web design trends and tips.</p>
+                <div class="text-center space-x-6">
+                    <a href="https://main--papaya-muffin-6e7c84.netlify.app/" class="text-blue-600 hover:underline">View</a>
+                    <a href="https://github.com/programmer22/xrp-dashboard" class="text-blue-600 hover:underline">Code</a>
+                </div>
+            </div>
+            <div class="p-4 bg-gray-100 rounded shadow-md">
+                <h3 class="text-xl mb-2 text-center">Portfolio</h3>
+                <div>
+                    <Image src="./melissa-website.jpg" alt="pic" />
+                </div>
+                <p class="mb-4">Stay updated with our latest blog posts on web design trends and tips.</p>
+                <div class="text-center space-x-6">
+                    <a href="https://main--papaya-muffin-6e7c84.netlify.app/" class="text-blue-600 hover:underline">View</a>
+                    <a href="https://github.com/programmer22/xrp-dashboard" class="text-blue-600 hover:underline">Code</a>
+                </div>
+            </div>
+            <div class="p-4 bg-gray-100 rounded shadow-md">
+                <h3 class="text-xl mb-2 text-center">Social Network</h3>
+                <div>
+                    <Image src="./xrp.jpg" alt="pic" />
+                </div>
+                <p class="mb-4">Stay updated with our latest blog posts on web design trends and tips.</p>
+                <div class="text-center space-x-6">
+                    <a href="https://main--papaya-muffin-6e7c84.netlify.app/" class="text-blue-600 hover:underline">View</a>
+                    <a href="https://github.com/programmer22/xrp-dashboard" class="text-blue-600 hover:underline">Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-6 text-white">
+        <h2 class="text-3xl mb-6 text-center">Contact Us</h2>
+        <form action="/submit_form" method="post" class="max-w-md mx-auto space-y-4">
+            <div>
+                <label for="name" class="block mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+                <label for="message" class="block mb-2">Message:</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Your Web Design Agency. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
