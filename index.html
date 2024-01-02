@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick's Web Agency</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-
 <body class="p-6 bg-black text-sm">
-
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     <!-- Navigation Bar -->
-    <nav class="bg-black text-white font-bold py-4 shadow-md">
+    <!-- background image style={{}} -->
+    <nav class="bg-black text-white font-bold py-4 shadow-md p-6" style="background-image: url('./space.png')" class="bg-cover bg-center bg-no-repeat flex items-center justify-center relative">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-4xl font-extrabold hover:text-blue-200 transition duration-300 ease-in-out">NWA</h1>
             <div class="flex space-x-4">
@@ -19,6 +22,7 @@
                 <a href="#about" class="hover:text-blue-300 transition duration-300 ease-in-out">About</a>
                 <a href="#services" class="hover:text-blue-300 transition duration-300 ease-in-out">Services</a>
                 <a href="#blog" class="hover:text-blue-300 transition duration-300 ease-in-out">Blog</a>
+                <a href="#testimonials" class="hover:text-blue-300 transition duration-300 ease-in-out">Testimonials</a>
                 <a href="#contact" class="hover:text-blue-300 transition duration-300 ease-in-out">Contact</a>
             </div>
         </div>
@@ -31,13 +35,13 @@
 
     <section id="about" class="p-6 text-white bg-black">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+            <h2 class="text-3xl mb-6 text-center text-white">About Me</h2>
             <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                 <div class="md:w-1/2">
                     <p class="text-lg leading-relaxed">We are a passionate team of web designers and developers dedicated to creating beautiful and functional websites that help businesses succeed. Our approach combines innovative design with cutting-edge technology to deliver exceptional digital experiences.</p>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
-                    <img src="./nick.png" alt="Your Team" class="rounded-full w-48 h-48 border-4 border-white shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
+                    <img src="./images/nick.png" alt="Your Team" class="rounded-full w-48 h-48 border-4 border-white shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105">
                 </div>
             </div>
         </div>
@@ -46,37 +50,55 @@
     <!-- Services Section -->
     <section id="services" class="p-6">
         <h2 class="text-3xl mb-6 text-center text-white">Our Services</h2>
-        <div class="flex justify-center gap-4 border-2 border-yellow-200">
+        <div class="flex justify-center gap-4">
             <!-- Service 1 -->
             <div class="flex-1 max-w-sm p-4 bg-white rounded shadow-md items-center">
                 <h3 class="text-xl mb-2">Basic Package - $500</h3>
+                <!-- random image -->
+
                 <p>Perfect for small businesses or personal projects. Includes a basic website with up to 5 pages, SEO optimization, and mobile responsiveness.</p>
+                <div class="mt-2 font-bold">
+                    <p>1 Pages</p>
+                    <p>SEO Optimization</p>
+                    <p>Mobile Responsive</p>
+                </div>
                 <a href="link-to-purchase-basic-package" class="flex items-center mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
             </div>
             <!-- Service 2 -->
             <div class="flex-1 max-w-sm p-4 bg-white rounded shadow-md">
                 <h3 class="text-xl mb-2">Professional Package - $750</h3>
+            
                 <p>Includes everything in the Basic package, plus e-commerce functionality, advanced SEO, and social media integration.</p>
+                <div class="mt-2 font-bold">
+                    <p>3 Pages</p>
+                    <p>SEO + SMM</p>
+                    <p>E-commerce Functionality</p>
+                </div>
                 <a href="link-to-purchase-professional-package" class="flex items-center mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
             </div>
             <!-- Service 3 -->
             <div class="flex-1 max-w-sm p-4 bg-white rounded shadow-md">
                 <h3 class="text-xl mb-2">Premium Package - $1000</h3>
+            
                 <p>Our comprehensive solution. Includes all features of the Professional package, plus custom graphics, premium plugins, and ongoing maintenance for 1 month.</p>
+                <div class="mt-2 font-bold">
+                    <p>Unlimited Pages</p>
+                    <p>Advanced SEO</p>
+                    <p>24/7 Support</p>
+                </div>
                 <a href="link-to-purchase-premium-package" class="flex items-center mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
             </div>
         </div>
     </section>
 
-
     <!-- Blog Section -->
     <section id="blog" class="p-6">
         <h2 class="text-3xl mb-6 text-center text-white">Latest Blog Posts</h2>
-        <div class="flex justify-center gap-4 border-2 border-yellow-200">
-            <div class="p-4 bg-gray-100 rounded shadow-md">
+        <div class="flex justify-center gap-4">
+            <div class="max-w-sm bg-gray-100 rounded shadow-md">
                 <h3 class="text-xl mb-2 text-center">XRP App</h3>
                 <div>
-                    <Image src="./xrp.jpg" alt="pic" class="hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105"/>
+                    <Image src="./images/xrp.jpg" alt="pic" class="hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105"/>
                 </div>
                 <p class="mt-2 mb-4">Stay updated with our latest blog posts on web design trends and tips.</p>
                 <div class="text-center space-x-6">
@@ -84,10 +106,10 @@
                     <a href="https://github.com/programmer22/xrp-dashboard" class="text-blue-600 hover:underline">Code</a>
                 </div>
             </div>
-            <div class="p-6 bg-gray-100 rounded shadow-md">
+            <div class="max-w-sm bg-gray-100 rounded shadow-md">
                 <h3 class="text-xl mb-2 text-center">Portfolio</h3>
                 <div>
-                    <Image src="./melissa-website.jpg" alt="pic" class="hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105"/>
+                    <Image src="./images/melissa-website.jpg" alt="pic" class="hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105"/>
                 </div>
                 <p class="mt-2 mb-4">Stay updated with our latest blog posts on web design trends and tips.</p>
                 <div class="text-center space-x-6">
@@ -95,10 +117,10 @@
                     <a href="https://github.com/programmer22/xrp-dashboard" class="text-blue-600 hover:underline">Code</a>
                 </div>
             </div>
-            <div class="p-4 bg-gray-100 rounded shadow-md">
+            <div class="max-w-sm bg-gray-100 rounded shadow-md">
                 <h3 class="text-xl mb-2 text-center">Social Network</h3>
                 <div>
-                    <Image src="./xrp.jpg" alt="pic" class="hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105"/>
+                    <Image src="./images/xrp.jpg" alt="pic" class="hover:shadow-2xl transition duration-300 ease-in-out transform hover:scale-105"/>
                 </div>
                 <p class="mt-2 mb-4">Stay updated with our latest blog posts on web design trends and tips.</p>
                 <div class="text-center space-x-6">
@@ -109,27 +131,95 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="p-6 text-white">
-        <h2 class="text-3xl mb-6 text-center">Contact Us</h2>
-        <form action="/submit_form" method="post" class="max-w-md mx-auto space-y-4">
-            <div>
-                <label for="name" class="block mb-2">Name:</label>
-                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+
+    <!-- Testimonials Section -->
+    <section  id="testimonials" class="bg-black text-white p-6 text-xs">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Client Testimonials</h2>
+            <div class="grid grid-cols-3 justify-center gap-4">
+                <div class="max-w-md p-4 bg-gray-100 text-black rounded shadow-md">
+                    <p>"Nick's Web Agency did a fantastic job on our website. Their attention to detail and creative approach was exactly what we needed."</p>
+                    <span class="block mt-4 font-bold">- Jane Doe, ABC Corp</span>
+                </div>
+        
+                <div class="max-w-md p-4 bg-gray-100 text-black rounded shadow-md">
+                    <p>"Nick's Web Agency did a fantastic job on our website. Their attention to detail and creative approach was exactly what we needed."</p>
+                    <span class="block mt-4 font-bold">- Jane Doe, ABC Corp</span>
+                </div>
+        
+                <div class="max-w-md p-4 bg-gray-100 text-black rounded shadow-md">
+                    <p>"Nick's Web Agency did a fantastic job on our website. Their attention to detail and creative approach was exactly what we needed."</p>
+                    <span class="block mt-4 font-bold">- Jane Doe, ABC Corp</span>
+                </div>
+        
+                <div class="max-w-md p-4 bg-gray-100 text-black rounded shadow-md">
+                    <p>"Nick's Web Agency did a fantastic job on our website. Their attention to detail and creative approach was exactly what we needed."</p>
+                    <span class="block mt-4 font-bold">- Jane Doe, ABC Corp</span>
+                </div>
+        
+                <div class="max-w-md p-4 bg-gray-100 text-black rounded shadow-md">
+                    <p>"Nick's Web Agency did a fantastic job on our website. Their attention to detail and creative approach was exactly what we needed."</p>
+                    <span class="block mt-4 font-bold">- Jane Doe, ABC Corp</span>
+                </div>
+        
+                <div class="max-w-md p-4 bg-gray-100 text-black rounded shadow-md">
+                    <p>"Nick's Web Agency did a fantastic job on our website. Their attention to detail and creative approach was exactly what we needed."</p>
+                    <span class="block mt-4 font-bold">- Jane Doe, ABC Corp</span>
+                </div>
+                <!-- Additional testimonials -->
             </div>
-            <div>
-                <label for="email" class="block mb-2">Email:</label>
-                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded" required>
-            </div>
-            <div>
-                <label for="message" class="block mb-2">Message:</label>
-                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
-            </div>
-        </form>
+        </div>
     </section>
+
+    <!-- Alternate Contact Section -->
+    <h2 class="text-3xl mb-6 text-center text-white">Get In Touch</h2>
+    <div id="contact" class="container mx-auto p-6 bg-gray-100 rounded-lg shadow-lg mb-8 b">
+        <div>
+            <form action="https://formspree.io/f/mpzgjkak" method="POST" class="space-y-6">
+                <div class="form-group">
+                    <label for="alt-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="alt-name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div class="form-group">
+                    <label for="alt-email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="alt-email" name="_replyto" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div class="form-group">
+                    <label for="alt-phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <input type="tel" id="alt-phone" name="phone" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </div>
+                <div class="form-group">
+                    <label for="alt-country" class="block text-sm font-medium text-gray-700">Country</label>
+                    <select id="alt-country" name="country" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="alt-message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="alt-message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="block text-sm font-medium text-gray-700">Subscribe to Newsletter</label>
+                    <div class="mt-4 flex items-center">
+                        <input type="radio" id="alt-subscribe-yes" name="subscribe" value="yes" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="alt-subscribe-yes" class="ml-3 block text-sm font-medium text-gray-700">Yes</label>
+                    </div>
+                    <div class="mt-2 flex items-center">
+                        <input type="radio" id="alt-subscribe-no" name="subscribe" value="no" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                        <label for="alt-subscribe-no" class="ml-3 block text-sm font-medium text-gray-700">No</label>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
 
     <!-- Footer -->
     <footer class="bg-blue-600 text-white p-6">
@@ -137,7 +227,69 @@
             <p>&copy; 2023 Your Web Design Agency. All rights reserved.</p>
         </div>
     </footer>
-    
-</body>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const testimonials = [
+        { name: "Alice Johnson", text: "Nick's Web Agency transformed our website with a modern, clean design." },
+        { name: "Mark Smith", text: "Excellent service - responsive, professional, and they delivered on time." },
+        { name: "Sophia Lee", text: "Our SEO rankings improved dramatically after working with this agency." }
+    ];
+    
+    const slider = document.querySelector('#testimonialSlider .flex');
+    let currentIndex = 0;
+
+    function updateSlider() {
+        slider.innerHTML = `
+            <div class="px-2">
+                <p class="text-gray-700">${testimonials[currentIndex].text}</p>
+                <p class="text-gray-600 text-sm mt-2">- ${testimonials[currentIndex].name}</p>
+            </div>
+        `;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        updateSlider();
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateSlider();
+    });
+
+    updateSlider(); // Initialize the slider
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const packages = [
+        { name: "Basic", price: "$500", features: ["1 Pages", "SEO Optimization", "Mobile Responsive"] },
+        { name: "Professional", price: "$1500", features: ["3 Pages", "SEO + SMM", "E-commerce Functionality"] },
+        { name: "Premium", price: "$3000", features: ["Unlimited Pages", "Advanced SEO", "24/7 Support"] }
+    ];
+    
+    const table = document.querySelector('#pricingTable .grid');
+
+    function createPricingOption(pkg) {
+        const featureList = pkg.features.map(feature => `<li class="text-gray-600">${feature}</li>`).join('');
+        return `
+            <div class="p-4 bg-gray-100 rounded shadow-md">
+                <h3 class="font-bold text-xl mb-2">${pkg.name} - ${pkg.price}</h3>
+                <ul class="mb-4">${featureList}</ul>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Choose</button>
+            </div>
+        `;
+    }
+
+    function updateTable() {
+        table.innerHTML = packages.map(createPricingOption).join('');
+    }
+
+    updateTable();
+});
+    </script>
+</body>
 </html>
